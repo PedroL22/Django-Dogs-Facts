@@ -13,15 +13,15 @@
 
 <body>
 	<div class="main-div">
-		<img class="cat-image" src="https://cataas.com/cat" alt="random cat image" />
-
+		<img class="cat-image" src="{{dog_image.message}}" alt="random cat image" />
 		<button class="cat-button" onClick={switchFact}>
 			Show a random fact
 		</button>
 		<button class="cat-button" onClick={turnFact}>
 			Hide fact
 		</button>
-		<h3 class="cat-fact">{randomFact.fact}</h3>
+		<h3 class="cat-fact">{{dog_fact.facts}}</h3>
+
 	</div>
 </body>
 
