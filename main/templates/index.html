@@ -1,0 +1,29 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Django Dogs Facts</title>
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+</head>
+
+<body>
+	<div class="main-div">
+		<img class="cat-image" src="https://cataas.com/cat" alt="random cat image" />
+
+		<button class="cat-button" onClick={switchFact}>
+			Show a random fact
+		</button>
+		<button class="cat-button" onClick={turnFact}>
+			Hide fact
+		</button>
+		<h3 class="cat-fact">{randomFact.fact}</h3>
+	</div>
+</body>
+
+</html>
+{% endblock %}
