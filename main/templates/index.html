@@ -13,15 +13,29 @@
 </head>
 
 <body>
+	<nav>
+		<div></div>
+		<ul class="icons">
+			<li>
+				<a href="https://www.linkedin.com/in/pedrolucena22/" target="_blank" rel="noreferrer">
+					<img src="{% static 'images/nav-icon.png' %}" alt="linkedin icon" />
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/PedroL22/" target="_blank" rel="noreferrer">
+					<img src="{% static 'images/nav-icon2.png' %}" alt="github icon" />
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/lucena_l22/" target="_blank" rel="noreferrer">
+					<img src="{% static 'images/nav-icon3.png' %}" alt="twitter icon" />
+				</a>
+			</li>
+		</ul>
+	</nav>
 	<div class="main-div">
-		<img class="cat-image" src="{{dog_image.message}}" alt="random cat image" />
-		<button class="cat-button" onClick={switchFact}>
-			Show a random fact
-		</button>
-		<button class="cat-button" onClick={turnFact}>
-			Hide fact
-		</button>
-		<h3 class="cat-fact">{{dog_fact.facts}}</h3>
+		<img class="dog-image" src="{{dog_image.message}}" alt="random dog image" />
+		<h3 class="dog-fact">{{dog_fact.facts}}</h3>
 
 	</div>
 </body>

@@ -26,11 +26,36 @@ html {
 
 }
 
+nav {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+}
+
+.icons {
+	display: flex;
+	margin: 1vw;
+}
+
+li a img {
+	height: 40px;
+	object-fit: cover;
+	margin: 20px;
+}
+
+@media (max-width: 990px) {
+	nav {
+		position: relative;
+		justify-content: center;
+	}
+}
+
 .main-div {
 	height: 100vh;
 }
 
-.cat-image {
+.dog-image {
 	display: flex;
 	margin: 5vh auto;
 	border: 5vw solid rgba(255, 255, 255, 0.75);
@@ -53,7 +78,7 @@ button:hover {
 	background-color: #d5b2ae;
 }
 
-.cat-fact {
+.dog-fact {
 	text-align: center;
 	margin: 0 auto;
 	width: 60vw;
